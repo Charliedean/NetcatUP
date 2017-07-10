@@ -19,4 +19,7 @@ send "export TERM=xterm-256color\n"
 send "stty rows `tput lines` columns `tput cols`\n"
 send "clear\n"
 interact
+send "stty -raw echo\n"
+send "exit\n"
 exit
+
